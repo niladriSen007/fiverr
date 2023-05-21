@@ -17,6 +17,7 @@ import Add from './pages/Add';
 import Messages from './pages/Messages';
 import Message from './pages/Message';
 import Register from './pages/Register';
+import Footer from './components/Footer';
 const App = () => {
 
 
@@ -27,6 +28,7 @@ const App = () => {
            <div style={{flex:"4"}}>
                 <Outlet />
           </div>
+          <Footer />
     </div>
   )
 

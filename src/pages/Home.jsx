@@ -2,10 +2,11 @@ import React from "react";
 import Feature from "../components/Feature";
 import TrustedBy from "../components/TrustedBy";
 import Slides from "../components/Slides";
-import { cards, staticData, videoSliderData } from "../data";
+import { cards, projects, staticData, videoSliderData } from "../data";
 import GigCategoryCards from "../components/gigCategoryCards";
 import { VscVerified } from "react-icons/vsc";
 import VideoCards from "../components/VideoCards";
+import ProjectCards from "../components/ProjectCards";
 
 const Home = () => {
   return (
@@ -81,6 +82,12 @@ const Home = () => {
       <Slides title={"Customer Reviews"} slidesToShow={1} arrowsScroll={1}>
         {videoSliderData.map((card) => (
           <VideoCards key={card.id} item={card} />
+        ))}
+      </Slides>
+
+      <Slides title={"Popular Projects"} slidesToShow={4} arrowsScroll={4}>
+        {projects.map((card) => (
+          <ProjectCards key={card.id} item={card} />
         ))}
       </Slides>
 
