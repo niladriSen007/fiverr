@@ -1,0 +1,20 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: 'Alice', serif;
+}
+.activeScroll{
+    @apply bg-white text-black border-b border-gray-400;
+}
+
+.inActiveScroll{
+    @apply bg-slate-900 text-white;
+}
+
+.popularSearch{
+    @apply bg-transparent text-white border-2 border-white rounded-full p-1 px-2 text-sm flex gap-1 items-center justify-center;
+}

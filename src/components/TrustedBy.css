@@ -1,0 +1,25 @@
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .logo-slider__logo {
+    display: inline-block;
+    height: 80px; /* Adjust the height as per your requirement */
+    margin-right: 20px; /* Adjust the spacing between logos */
+      
+  }
+  .logo_animation{
+
+    animation: slide 40s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
